@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     <meta charset="utf-8">
+    <!--Font section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <title>About Kristin Lukosevic</title>
   </head>
 
-  <body>
+  <body id="about-body"><!-- Added the ID for Task 1.6 -->
     <header>
-      <div><!-- Header Container -->
-        <div><!-- Begin Logo Section -->
-          <img src="img/portfolio/klukologo.png" alt=" kristin lukosevic">
-        </div><!-- End Logo -->
-        <div><!-- Begin Navigation Section -->
-          <nav>
-              <ul><!-- Work about contact links-->
-                <li><a href="index.html">WORK</a></li>
-                <li> <a href="about.html">ABOUT</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
-              </ul>
-          </nav>
-        </div><!-- End Navigation Section -->
-      </div><!-- End Header Container -->
+      <div class="container-fluid" id="topnav">
+        <a href="index.html"><!-- Added the link for Task 1.6, makes logo clickable -->
+          <picture id="logo-image">
+            <source srcset="img/portfolio/klukologo.png" media="(max-width:767px)">
+            <img src="img/portfolio/klukologo.png" alt="kristin lukosevic logo" class="logo">
+          </picture>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">WORK</a></li>
+            <li> <a href="about.html">ABOUT</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <div><!--Orange section -->
-        <div><!-- Yellow section -->
-          <div><!--About me section-->
-            <h1> About Me </h1>
-          </div>
-        </div><!-- End of Yellow section -->
-      </div><!-- End of orange section-->
-
+    <main class="container">
+      <!--Deleted the about me section since it wasn't in sketch -->
 
       <div><!-- Orange Section-->
         <div><!-- Yellow section-->
-          <div><!-- My photo section-->
-            <picture>
-              <source srcset="img/portfolio/myselfimage600.png" media="(max-width:767px)">
-              <img src="img/portfolio/myselfimage1200.png" alt="desktop screen">
-            </picture>
-          </div><!-- end of my photo section-->
+          <div id="about-photo"><!-- Photo container, prevents everything from being on the same line -->
+            <div class="col-xs-12 col-md-8 col-md-offset-2"><!-- My photo section-->
+              <picture>
+                <source srcset="img/portfolio/myselfimage600.png" media="(max-width:767px)">
+                <img src="img/portfolio/myselfimage1200.png" alt="desktop screen">
+              </picture>
+            </div><!-- end of my photo section-->
+          </div>
           <div><!-- Green section-->
             <div><!-- My story section-->
               <h2> My Story </h2>
@@ -57,9 +64,9 @@
                    Most of the art in my house is something I have created.
               </p>
               <!--My Resume section -->
-              <a href="files/KLukosevicResume.pdf" target="_blank">My Resume</a>
+              <a href="files/KLukosevicResume.pdf" class="button contact" target="_blank">My Resume</a>
             </div><!-- End of my story section-->
-            <div><!-- Skills and tools section-->
+            <div id="skill-tools"><!-- Skills and tools section-->
               <h2>Skills & Tools</h2>
               <div><!-- skills and tools Container-->
                 <div><!-- Skills section-->
@@ -77,7 +84,7 @@
                   <h3> Tools</h3>
                   <ul>
                     <li>Sketch</li>
-                    <li> Photoshop</li>
+                    <li>Photoshop</li>
                     <li>Behance</li>
                     <li>Invision</li>
                   </ul>
@@ -90,15 +97,20 @@
     </main>
 
     <footer id="CONTACT">
-      <div><!-- Contact Container -->
-        <h4> Let's Get in Touch! </h4>
+      <div class="container-fluid"><!-- Contact Container --><!-- Added class for Task 1.6 -->
+        <h4 class="center-text"> Let's Get in Touch! </h4><!-- Added the class for Task 1.6 -->
+        <!-- This section was changed in the prompts TASK 1.6
         <p> Give me a call!
           <a href="+15121234567">(512) 123-4567</a>
             or send me an <a href="mailto:klukosevic@gmail.com">Email</a>
         </p>
-        <div><!-- Social Icons -->
-          <ul>
-            <li><!--Linkedin icon-->
+        -->
+        <div class="center-objects"><!-- Created for Task 1.6 -->
+          <a href="mailto:klukosevic@gmail.com" class="button contact">Email Me</a><!-- updated for TASK 1.6 changed "email" to "email me"-->
+        </div>
+        <div class="center-objects" id="social"><!-- Social Icons -->
+          <ul class="list-inline"><!-- Added for Task 1.6, this allows me to update the list style -->
+            <li class="social-icons"><!--Linkedin icon--><!--Added class for Task 1.6-->
               <a href="https://www.linkedin.com/in/kristin-luko/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="48" height="48"
@@ -106,7 +118,7 @@
                 style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path></svg>
               </a>
             </li><!-- End Linkedin Icon -->
-            <li><!-- Behance Icon -->
+            <li class="social-icons"><!-- Behance Icon --><!--Added class for Task 1.6-->
               <a href="https://www.behance.net/kristinlukosev" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="48" height="48"
@@ -117,7 +129,7 @@
             </li><!-- End Behance Icon-->
           </ul>
         </div><!-- End Social Icons -->
-        <p> Copyright Kristin Lukosevic</p>
+        <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
       </div><!-- End Contact Container -->
     </footer>
   </body>

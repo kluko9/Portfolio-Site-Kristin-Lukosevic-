@@ -1,83 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     <meta charset="utf-8">
+    <!--Font section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <title>Kristin Lukosevic UX/UI Designer</title>
   </head>
-  <body>
+
+
+  <body id="index-body"><!-- Added the ID for Task 1.6 -->
     <header>
-      <div>
-        <img src="img/portfolio/klukologo.png" alt="kristin lukosevic">
+      <div class="container-fluid" id="topnav">
+        <a href="index.html"><!-- Added the link for Task 1.6, makes logo clickable -->
+          <picture id="logo-image">
+            <source srcset="img/portfolio/klukologo.png" media="(max-width:767px)">
+            <img src="img/portfolio/klukologo.png" alt="kristin lukosevic logo" class="logo">
+          </picture>
+        </a>
         <nav>
-            <ul>
-              <li><a href="index.html">WORK</a></li>
-              <li> <a href="about.html">ABOUT</a></li>
-              <li><a href="#CONTACT">CONTACT</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">WORK</a></li>
+            <li> <a href="about.html">ABOUT</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
+
+      <div id="hero"><!-- Had to add the hero ID for Task 1.6 -->
       <div><!-- Container for entire main body -->
         <div><!--Hero Section (whole section block,which is added between the <main></main> tags)-->
-          <div><!--Hero Section content here (container/wrapper)-->
-            <h1> Hi there, my name is Kristin Lukosevic,<br/> I am a UX/UI Designer from Austin, Texas.</h1>
-            <p>A creative designer both in person and on screen. </p>
+          <div class="container-fluid"><!--Hero Section content here (container/wrapper) added for Task 1.6-->
+            <h1 class="center-text"> Hi there, my name is Kristin Lukosevic,<br/> I am a UX / UI Designer from Austin, Texas.</h1>
+            <p class="center-text">A creative designer both in person and on screen. </p><!-- Added the class for task 1.6 -->
           </div>
         </div><!-- End Hero Section-->
 
 
-        <div><!-- Work Section -->
-          <div><!-- Work Container -->
+        <div id="work"><!-- Work Section --><!-- Added ID for Task 1.6 -->
+          <div class="container-fluid"><!-- Work Container --><!-- Added the class for Task 1.6 -->
             <h2> My Work </h2>
 
-            <div><!--Project one row content here-->
-              <div><!-- Project One Picture-->
+            <div class="row project"><!--Project one row content here--><!--Added class project for Task 1.6-->
+              <div class="col-md-7 col-lg-7"><!-- Project One Picture-->
                 <picture>
                   <source srcset="img/portfolio/DDimage600.png" media="(max-width:767px)">
                   <img src="img/portfolio/DDimage1200.png" alt="desktop screen">
                 </picture>
               </div><!-- End Project One Picture -->
-              <div><!-- Project One Description-->
+              <div class="col-md-5 col-lg-5"><!-- Project One Description-->
                 <h3> DELICIOUS DASH </h3>
                 <p>Delicious Dash was my second UX/UI project that helped me develop my icon skills as well as create responsive web applications.
                    This application is targeted for users to find quick recipes.</p>
-                <a href="delicious-dash.html">LEARN MORE</a>
+                <a href="delicious-dash.html" class="button learn-more">LEARN MORE</a>
               </div><!-- End Project One Description -->
             </div><!-- End Project One Row Content -->
 
-            <br/><!-- Spacer -->
-
-            <div><!--Project two row content here-->
-              <div><!-- Project two Picture-->
+            <div class="row project"><!--Project two row content here--><!--Added class project for Task 1.6-->
+              <div class="col-md-7 col-lg-7"><!-- Project two Picture-->
                 <picture>
                   <source srcset="img/portfolio/PPimage600.png" media="(max-width:767px)">
                   <img src="img/portfolio/PPimage1200.png" alt="desktop screen">
                 </picture>
               </div><!-- End Project two Picture -->
-              <div><!-- Project Two Description-->
+              <div class="col-md-5 col-lg-5"><!-- Project Two Description-->
                 <h3> PAWSATIVE PERFORMANCE </h3>
                 <p>Pawsative Performance is a mobile app for all skills of dog training. This mobile application helped me understand the main differences between iOS and android devices.
                    Pawsative Performance offers a variety of skills for each dogs individual needs such as basic training or advanced skills.</p>
-                <a href="#">LEARN MORE</a>
+                <a href="#" class="button learn-more">LEARN MORE</a>
               </div><!-- End Project Two Description -->
             </div><!-- End Project two row content -->
+
 
           </div><!-- End Work Container -->
         </div><!-- End Work Section-->
       </div><!-- End Container for entire main body -->
+    </div>
     </main>
 
     <footer id="CONTACT">
-      <div><!-- Contact Container -->
-        <h4> Let's Get in Touch! </h4>
+      <div class="container-fluid"><!-- Contact Container --><!-- Added class for Task 1.6 -->
+        <h4 class="center-text"> Let's Get in Touch! </h4><!-- Added the class for Task 1.6 -->
+        <!-- This section was changed in the prompts TASK 1.6
         <p> Give me a call!
           <a href="+15121234567">(512) 123-4567</a>
             or send me an <a href="mailto:klukosevic@gmail.com">Email</a>
         </p>
-        <div><!-- Social Icons -->
-          <ul>
-            <li><!--Linkedin icon-->
+        -->
+        <div class="center-objects"><!-- Created for Task 1.6 -->
+          <a href="mailto:klukosevic@gmail.com" class="button contact">Email Me</a><!-- updated for TASK 1.6 changed "email" to "email me"-->
+        </div>
+        <div class="center-objects" id="social"><!-- Social Icons -->
+          <ul class="list-inline"><!-- Added for Task 1.6, this allows me to update the list style -->
+            <li class="social-icons"><!--Linkedin icon--><!--Added class for Task 1.6-->
               <a href="https://www.linkedin.com/in/kristin-luko/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="48" height="48"
@@ -85,7 +110,7 @@
                 style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path></svg>
               </a>
             </li><!-- End Linkedin Icon -->
-            <li><!-- Behance Icon -->
+            <li class="social-icons"><!-- Behance Icon --><!--Added class for Task 1.6-->
               <a href="https://www.behance.net/kristinlukosev" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                   width="48" height="48"
@@ -96,7 +121,7 @@
             </li><!-- End Behance Icon-->
           </ul>
         </div><!-- End Social Icons -->
-        <p> Copyright Kristin Lukosevic</p>
+        <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
       </div><!-- End Contact Container -->
     </footer>
   </body>
