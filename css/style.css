@@ -1,13 +1,14 @@
 /*colors used:
-Primary Color
-Secondary color
+Primary Color: #E8EDDD
+Secondary color: #FFFFFF
+Button Color: #FF7F4F
+
 */
 
 
 
 
 body {
-  background-color:#EAEAEA;
   font-family: 'Roboto', sans-serif;
   font-size: 16px; /* Sets the font size to 16px*/
   font-weight: 300; /*Sets the font weight to 300 light*/
@@ -172,7 +173,7 @@ nav > ul > li > a {
 }
 
 #about-body {
-  background-color:#E8EDDD;
+  background-color:#E8EBEC;
 }
 
 #DD-body {
@@ -189,6 +190,15 @@ nav > ul > li > a {
 
 #social {
   margin-top: 10px;
+}
+
+#skill-tools > div {
+  display:inline-block;
+  width: 100%;
+}
+
+.thirty-percent {
+  width: 25%;
 }
 
 #about-photo {
