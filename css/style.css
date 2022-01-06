@@ -1,7 +1,7 @@
 /*colors used:
 Primary Color: #E8EDDD
 Secondary color: #FFFFFF
-Button Color: #FF7F4F
+Button Color: #3F6163
 
 */
 
@@ -79,6 +79,7 @@ Stuff I added for Task 1.6
 ***************************************/
 
 /* Elements */
+
 main {
   width:100%;
 }
@@ -110,52 +111,97 @@ nav > ul > li > a {
 
 .button.contact {
   background-color: transparent;
-  color: #FF7F50;
+  color: #3F6163;
   text-transform: uppercase;
-  border: 2px solid #FF7F50;
+  border: 2px solid #3F6163;
   border-radius: 3px;
   padding: 5px;
 }
 
 .button.contact:hover {
-  background-color: #FF7F50;
-  color: #FFFFFF
-}
-
-.testing {
-  border: 1px solid black;
+  background-color: #3F6163;
+  color: #FFFFFF;
 }
 
 .button.learn-more {
-  background-color: #E8EDDD;
-  color: #FF7F50;
+  background-color: #3F6163;
+  color: #FFFFFF;
   text-transform: uppercase;
-  border: 1px solid #FF7F50;
+  border: 1px solid #FFFFFF;
   border-radius: 3px;
   padding: 5px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.learn-more:hover {
-  background-color: #FF7F50;
-  color: #FFFFFF
-}
-
-.center-text {
-  text-align: center;
-}
-
-.project {
-  padding: 0 0 10px 0; /* 0 on the top, right, and left, 10px padding on the bottom */
-}
-
-.social-icons:hover {
-  opacity: .8;
+  background-color: #B4BFA3;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .center-objects {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
+
+.container-body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-fluid {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project {
+  padding: 0 0 10px 0; /* 0 on the top, right, and left, 10px padding on the bottom */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-icons:hover {
+  opacity: .8;
+}
+
+.testing {
+  border: 1px solid black;
+}
+
+.work-img {
+  width: 50%;
+  display: inline-block;
+}
+.work-text {
+  width: 45%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
 }
 
 /* IDs */
@@ -176,12 +222,23 @@ nav > ul > li > a {
   background-color:#E8EBEC;
 }
 
+#about-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about-photo > div {
+  width: 65%;
+}
+
 #DD-body {
   background-color:#E8EDDD;
 }
 
 #DD-main {
   background-color: #FFFFFF;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #email {
@@ -189,7 +246,7 @@ nav > ul > li > a {
 }
 
 #social {
-  margin-top: 10px;
+
 }
 
 #skill-tools > div {
@@ -197,17 +254,24 @@ nav > ul > li > a {
   width: 100%;
 }
 
-.thirty-percent {
-  width: 25%;
-}
-
-#about-photo {
-  display: inline-block;
-}
-
 #topnav {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+#tools {
+  margin-left: 125px;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* For large screens when it is wider than 1024px */
+  .work-img {
+    width: 60%;
+  }
+  .work-text {
+    width: 35%;
+    padding: 20px;
+  }
 }
 
 @media only screen and (min-width: 640px) {
@@ -216,12 +280,17 @@ nav > ul > li > a {
     float: right; /* Makes nav stay on right of screen */
   }
   nav > ul > li {
-    margin: 33px 3px 10px; /* Top margin of 33 px, left and rigth of 3px, bottom of 10px */
+    margin: 20px 3px 10px; /* Top margin of 33 px, left and rigth of 3px, bottom of 10px */
   }
 }
 
 @media only screen and (max-width: 639px) {
   /* When screens are smaller than 639 px */
+
+  nav {
+    width: 100%;
+  }
+
   nav > ul {
     width: 100%;
     margin-top: 10px;
@@ -232,8 +301,7 @@ nav > ul > li > a {
     text-align: center;
   }
 
-  #logo-image2 {
-    width: 50%;
+  .column {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -244,4 +312,108 @@ nav > ul > li > a {
     margin-left: auto;
     margin-right: auto;
   }
+  .work-img {
+    width: 100%;
+  }
+  .work-text {
+    width: 100%;
+  }
+
+  #about-photo > div {
+    width: 100%;
+  }
+
+  #logo-image2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tools {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+.sun
+{
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+
+.cloud-front
+{
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back
+{
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+#bigleaf
+{
+  animation-duration: 4s;
+  animation-name: bigleaf-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes bigleaf-move
+{
+    from {transform: translate(197px,66px);}
+    to {transform: translate(197px,105px);}
+}
+
+
+#circle
+{
+  animation-duration: 5s;
+  animation-name: bigmoon-fade;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes bigmoon-fade
+{
+  0% {fill: #FFFFFF;}
+  25% {fill: #CCE4E5;}
+  50% {fill: #ADC9CB;}
+  75% {fill: #CCE4E5;}
+  100% {fill: #FFFFFF;}
 }
