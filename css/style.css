@@ -323,17 +323,11 @@ nav > ul > li > a {
     width: 100%;
   }
 
-  #logo-image2 {
-    width: 50%;
+  #logo-image {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }
-
-  #logo-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   #tools {
@@ -400,7 +394,8 @@ nav > ul > li > a {
 }
 
 
-#circle
+#Oval,
+#Oval1
 {
   animation-duration: 5s;
   animation-name: bigmoon-fade;
