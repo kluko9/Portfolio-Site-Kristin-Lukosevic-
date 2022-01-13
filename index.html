@@ -8,19 +8,23 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <meta charset="utf-8">
+
     <!--Font section-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <!--hamburger icon section-->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kristin Lukosevic UX/UI Designer</title>
   </head>
 
-
-  <body id="index-body"><!-- Added the ID for Task 1.6 -->
-    <header>
-      <div class="container-fluid" id="topnav">
+<body id="index-body"><!-- Added the ID for Task 1.6 -->
+  <header>
+    <div class="container" id="topnav">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><!-- logo animation -->
           <svg id="logo-image" width="406px" height="155px" viewBox="0 0 406 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>myklukologo</title>
@@ -123,17 +127,19 @@
           <ul>
             <li><a href="index.html">WORK</a></li>
             <li> <a href="about.html">ABOUT</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#CONTACT" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
     <main>
 
       <div id="hero"><!-- Had to add the hero ID for Task 1.6 -->
       <div><!-- Container for entire main body -->
         <div><!--Hero Section (whole section block,which is added between the <main></main> tags)-->
-          <div class="container-fluid"><!--Hero Section content here (container/wrapper) added for Task 1.6-->
+          <div class="container"><!--Hero Section content here (container/wrapper) added for Task 1.6-->
             <h1 class="center-text"> Hi there, my name is Kristin Lukosevic,<br/> I am a UX / UI Designer from Austin, Texas.</h1>
             <p class="center-text">A creative designer both in person and on screen. </p><!-- Added the class for task 1.6 -->
           </div>
@@ -141,7 +147,7 @@
 
 
         <div id="work"><!-- Work Section --><!-- Added ID for Task 1.6 -->
-          <div class="container-fluid"><!-- Work Container --><!-- Added the class for Task 1.6 -->
+          <div class="container"><!-- Work Container --><!-- Added the class for Task 1.6 -->
             <h2> My Work </h2>
 
             <div class="row project"><!--Project one row content here--><!--Added class project for Task 1.6-->
@@ -790,7 +796,7 @@
     </main>
 
     <footer id="CONTACT">
-      <div class="container-fluid"><!-- Contact Container --><!-- Added class for Task 1.6 -->
+      <div class="container"><!-- Contact Container --><!-- Added class for Task 1.6 -->
         <h4 class="center-text"> Let's Get in Touch! </h4><!-- Added the class for Task 1.6 -->
         <!-- This section was changed in the prompts TASK 1.6
         <p> Give me a call!
@@ -825,6 +831,9 @@
         <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
       </div><!-- End Contact Container -->
     </footer>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

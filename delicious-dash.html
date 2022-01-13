@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <!-- Latest compiled and minified CSS Bootstrap -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <head>
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-  <meta charset="utf-8">
-  <!--Font section-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
-  <title>Kristin Lukosevic UX/UI Designer</title>
-</head>
-  <body id="DD-body">
-    <header>
-      <div class="container-fluid" id="topnav">
+    <!--Font section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <!--hamburger icon section-->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kristin Lukosevic UX/UI Designer</title>
+  </head>
+
+<body id="index-body"><!-- Added the ID for Task 1.6 -->
+  <header>
+    <div class="container" id="topnav">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><!-- logo animation -->
           <svg id="logo-image" width="406px" height="155px" viewBox="0 0 406 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>myklukologo</title>
@@ -121,36 +127,38 @@
           <ul>
             <li><a href="index.html">WORK</a></li>
             <li> <a href="about.html">ABOUT</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#CONTACT" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main id="DD-main"><!-- Begin Main --><!-- Added ID for Task 1.6 -->
       <div class="container-body"><!-- Added for Task 1.6, this should make everything fit nicer on the page -->
+        <h1> Delicious Dash </h1>
         <div><!-- Delicious Dash Picture-->
           <picture>
             <source srcset="img/portfolio/DDimage600.png" media="(max-width:767px)">
             <img src="img/portfolio/DDimage1200.png" alt="desktop screen">
           </picture>
-          <h1> DELICIOUS DASH </h1>
         </div><!-- End Delicious Dash Picture -->
 
         <div id="DD-about"><!-- Delicious Dash about section -->
-          <h2> ABOUT </h2>
+          <h2> About </h2>
           <p> Delicious Dash is a mobile and responsive web application focusing on finding quick recipes for users. Delicious Dash has a variety of filter types to help users find exactly the recipe they need, whether thats healthy, quick, and for all family sizes.
           </p>
         </div><!-- End Delicious Dash about section -->
 
         <div id="DD-problem"><!-- Delicious Dash Problem section -->
-          <h2> PROBLEM </h2>
+          <h2> Problem </h2>
           <p>The main problem with recipe apps is that users will search for something and the recipe that shows up will not be at all what they searched for.
           </p>
         </div><!-- End Delicious Dash Problem section -->
 
         <div id="interviews"><!-- User interview section-->
-          <h2> USER INTERVIEWS </h2>
+          <h2> User interviews </h2>
           <p>After talking with users a few common problems came about. Out of the 3 users I interviewed the problems included.
           </p>
           <ul>
@@ -162,7 +170,7 @@
         </div><!-- End of user interview section-->
 
         <div id="solutions"><!-- Solutions section-->
-          <h2> SOLUTIONS </h2>
+          <h2> Solutions </h2>
           <p>To fix the common problems Delicious Dash the following feature were implemented</p>
             <ul>
               <li> Filtering options for
@@ -180,7 +188,7 @@
         </div><!-- End of Solutions section-->
 
         <div id="flows"><!-- User flow section-->
-          <h2> USER FLOWS </h2>
+          <h2> User Flows </h2>
           <p>Once all of the necessary information was collected I created a user flow charts to show the navigation of the app.
           </p>
             <picture><!-- User Flow photo -->
@@ -190,7 +198,7 @@
         </div><!-- End of User flow <section-->
 
         <div id="wireframing"><!-- Wireframing section-->
-          <h2> WIREFRAMING</h2>
+          <h2> Wireframing</h2>
           <p> Showing users how to</p>
             <ul>
               <li> Log into Delicious Dash </li>
@@ -210,7 +218,7 @@
         </div><!-- end of wireframing section-->
 
         <div id="final-product"><!-- Final Product Section-->
-          <h2> FINAL PRODUCT</h2>
+          <h2> Final Product</h2>
           <p> Here is Delcious Dash using both mobile and web screens
           This recipe app shows the following</p>
             <ul>
@@ -273,6 +281,9 @@
         <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
       </div><!-- End Contact Container -->
     </footer>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <!-- Latest compiled and minified CSS Bootstrap -->
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <meta charset="utf-8">
-  <!--Font section-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-  <title>Kristin Lukosevic UX/UI Designer</title>
-</head>
+    <meta charset="utf-8">
 
-  <body id="about-body"><!-- Added the ID for Task 1.6 -->
-    <header>
-      <div class="container-fluid" id="topnav">
+    <!--Font section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <!--hamburger icon section-->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kristin Lukosevic UX/UI Designer</title>
+  </head>
+
+<body id="index-body"><!-- Added the ID for Task 1.6 -->
+  <header>
+    <div class="container" id="topnav">
+      <div class="navtoggle" id="myNavtoggle">
         <a href="index.html"><!-- logo animation -->
           <svg id="logo-image" width="406px" height="155px" viewBox="0 0 406 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>myklukologo</title>
@@ -121,11 +127,13 @@
           <ul>
             <li><a href="index.html">WORK</a></li>
             <li> <a href="about.html">ABOUT</a></li>
-            <li><a href="#CONTACT">CONTACT</a></li>
+            <li><a href="#CONTACT" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main>
       <!--Deleted the about me section since it wasn't in sketch -->
@@ -133,7 +141,7 @@
       <div class="container-body"><!-- Orange Section-->
         <div id="yellow-div"><!-- Yellow section-->
           <div id="about-photo" class="center-objects"><!-- Photo container, prevents everything from being on the same line -->
-            <div class="col-xs-12 col-md-8 col-md-offset-2 center-objects"><!-- My photo section-->
+            <div class="center-objects"><!-- My photo section-->
               <picture>
                 <source srcset="img/portfolio/myselfimage600.png" media="(max-width:767px)">
                 <img src="img/portfolio/myselfimage1200.png" alt="desktop screen">
@@ -224,6 +232,9 @@
         <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
       </div><!-- End Contact Container -->
     </footer>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

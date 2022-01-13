@@ -16,15 +16,19 @@ body {
   color:#3F6163;
 }
 
+header {
+
+}
+
 h1, h2, h3, h4 {
   line-height:1.4;
 }
 h1{
   font-family: 'Sofia', cursive;
-  font-size: 2.75em;
+  font-size: 3.25em;
 }
 h2{
-  font-size:2.25em;
+  font-size:2.00em;
   font-weight:700;
 }
 h3{
@@ -84,18 +88,11 @@ main {
   width:100%;
 }
 
-nav {
-  display: inline-block;
-}
-
 nav > ul {
   list-style-type: none;
   padding: 0;
-  display: inline-block;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
+  /*display: inline-block;*/
 }
 
 nav > ul > li > a {
@@ -162,14 +159,49 @@ nav > ul > li > a {
   margin-right: auto;
 }
 
-.container-fluid {
+.container {
   width: 97%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 10px;
 }
 
-.project {
+.icon:hover {
+  color: #FFFFFF;
+}
+
+.project { /* on the index.html page */
   padding: 0 0 10px 0; /* 0 on the top, right, and left, 10px padding on the bottom */
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #3F6163;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .row {
@@ -179,10 +211,6 @@ nav > ul > li > a {
 
 .social-icons:hover {
   opacity: .8;
-}
-
-.testing {
-  border: 1px solid black;
 }
 
 .work-img {
@@ -195,12 +223,12 @@ nav > ul > li > a {
   display: inline-block;
 }
 
-.list-inline {
+.list-inline { /* social icons in footer */
   padding-left: 0;
   list-style: none;
 }
 
-.list-inline > li {
+.list-inline > li { /* social icons in footer */
   display: inline-block;
 }
 
@@ -245,6 +273,10 @@ nav > ul > li > a {
   margin-top: -20px;
 }
 
+#logo-image {
+  /*max-width: 150px;*/
+}
+
 #social {
 
 }
@@ -263,80 +295,8 @@ nav > ul > li > a {
   margin-left: 125px;
 }
 
-@media only screen and (min-width: 1024px) {
-  /* For large screens when it is wider than 1024px */
-  .work-img {
-    width: 60%;
-  }
-  .work-text {
-    width: 35%;
-    padding: 20px;
-  }
-}
 
-@media only screen and (min-width: 640px) {
-  /* When the screen is wider than 640px, the below applies */
-  nav {
-    float: right; /* Makes nav stay on right of screen */
-  }
-  nav > ul > li {
-    margin: 20px 3px 10px; /* Top margin of 33 px, left and rigth of 3px, bottom of 10px */
-  }
-}
-
-@media only screen and (max-width: 639px) {
-  /* When screens are smaller than 639 px */
-
-  nav {
-    width: 100%;
-  }
-
-  nav > ul {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav > ul > li {
-    width: 32%;
-    text-align: center;
-  }
-
-  .column {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .work-img {
-    width: 100%;
-  }
-  .work-text {
-    width: 100%;
-  }
-
-  #about-photo > div {
-    width: 100%;
-  }
-
-  #logo-image {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-
-  #tools {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}
-
+/* Animations */
 
 .sun
 {
@@ -411,4 +371,81 @@ nav > ul > li > a {
   50% {fill: #ADC9CB;}
   75% {fill: #CCE4E5;}
   100% {fill: #FFFFFF;}
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) {
+  /* For large screens when it is wider than 1024px */
+  .work-img {
+    width: 60%;
+  }
+  .work-text {
+    width: 35%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* When the screen is wider than 640px, the below applies */
+  nav {
+    float: right; /* Makes nav stay on right of screen */
+  }
+  nav > ul > li {
+    margin: 20px 3px 10px; /* Top margin of 33 px, left and Right of 3px, bottom of 10px */
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  /* When screens are smaller than 639 px */
+
+  .column {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work-img {
+    width: 100%;
+  }
+  .work-text {
+    width: 100%;
+  }
+
+  #about-photo > div {
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  #logo-image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  #tools {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
