@@ -1,43 +1,43 @@
-/*colors used:
-Primary Color: #E8EDDD
-Secondary color: #FFFFFF
-Button Color: #3F6163
+/* colors used:
+Primary Color: #e8eddd
+Secondary color: #fff
+Button Color: #3e5f61
 
 */
 
-
-
-
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px*/
-  font-weight: 300; /*Sets the font weight to 300 light*/
-  line-height: 1.6; /*Sets the line height to 1.6 * the font size */
-  color:#3F6163;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 light */
+  line-height: 1.6; /* Sets the line height to 1.6 * the font size */
+  color: #3f6163;
 }
 
-header {
-
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
-h1, h2, h3, h4 {
-  line-height:1.4;
-}
-h1{
+h1 {
   font-family: 'Sofia', cursive;
   font-size: 3.25em;
 }
-h2{
-  font-size:2.00em;
-  font-weight:700;
+
+h2 {
+  font-size: 2em; /* was 2.00em before stylelint */
+  font-weight: 700;
 }
-h3{
+
+h3 {
   font-size: 1.75em;
-  font-weight:400;
+  font-weight: 400;
 }
-h4{
-  font-size:1.00em;
-  font-weight:400;
+
+h4 {
+  font-size: 1em;
+  font-weight: 400;
 }
 
 img {
@@ -45,17 +45,19 @@ img {
 }
 
 a {
-  color: #3F6163;
+  color: #3f6163;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
   color: #ff7f50;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:visited { /* visited link */
-  color: #3F6163;
+  color: #3f6163;
 }
+
 a:active { /* selected link */
   color: #ff7f50;
 }
@@ -63,7 +65,7 @@ a:active { /* selected link */
 .button {
   display: inline-block;
   background-color: #ff7f50;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
   padding: 1px;
   border-radius: 1px;
@@ -75,7 +77,6 @@ a:active { /* selected link */
   max-width: 100px; /* changed to 100px because 150 seemed too big */
 }
 
-
 /***************************************
 
 Stuff I added for Task 1.6
@@ -85,46 +86,47 @@ Stuff I added for Task 1.6
 /* Elements */
 
 main {
-  width:100%;
+  width: 100%;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /*display: inline-block;*/
+
+  /* display: inline-block; */
 }
 
 nav > ul > li > a {
-  padding: 0 10px; /* 0 padding on top and bottom, 10px padding on left and right*/
+  padding: 0 10px; /* 0 padding on top and bottom, 10px padding on left and right */
 }
 
 /* Classes */
 
 .button:hover {
-  opacity: .8;
+  opacity: 0.8;
   text-decoration: none;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #3F6163;
+  color: #3f6163;
   text-transform: uppercase;
-  border: 2px solid #3F6163;
+  border: 2px solid #3f6163;
   border-radius: 3px;
   padding: 5px;
 }
 
 .button.contact:hover {
-  background-color: #3F6163;
-  color: #FFFFFF;
+  background-color: #3f6163;
+  color: #fff;
 }
 
 .button.learn-more {
-  background-color: #3F6163;
-  color: #FFFFFF;
+  background-color: #3f6163;
+  color: #fff;
   text-transform: uppercase;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #fff;
   border-radius: 3px;
   padding: 5px;
   transition-duration: 0.2s;
@@ -132,8 +134,8 @@ nav > ul > li > a {
 }
 
 .button.learn-more:hover {
-  background-color: #B4BFA3;
-  color: #FFFFFF;
+  background-color: #6b7d42;
+  color: #fff;
   opacity: 0.8;
 }
 
@@ -167,11 +169,11 @@ nav > ul > li > a {
 }
 
 .icon:hover {
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .project { /* on the index.html page */
-  padding: 0 0 10px 0; /* 0 on the top, right, and left, 10px padding on the bottom */
+  padding: 0 0 10px; /* 0 on the top, right, and left, 10px padding on the bottom */
 }
 
 .navtoggle li:not(:last-child) {
@@ -186,7 +188,8 @@ nav > ul > li > a {
   padding-right: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -194,13 +197,13 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #3F6163;
+  border-top: 1px solid #3f6163;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -210,13 +213,14 @@ nav > ul > li > a {
 }
 
 .social-icons:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .work-img {
   width: 50%;
   display: inline-block;
 }
+
 .work-text {
   width: 45%;
   padding: 20px;
@@ -234,20 +238,16 @@ nav > ul > li > a {
 
 /* IDs */
 
-#hero {/* this is for the hero section on the index.html page */
-
-}
-
 #work { /* for the work section on the index.html page */
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 #index-body {
-  background-color:#E8EDDD;
+  background-color: #e8eddd;
 }
 
 #about-body {
-  background-color:#E8EBEC;
+  background-color: #e8ebec;
 }
 
 #about-photo {
@@ -260,11 +260,11 @@ nav > ul > li > a {
 }
 
 #DD-body {
-  background-color:#E8EDDD;
+  background-color: #e8eddd;
 }
 
 #DD-main {
-  background-color: #FFFFFF;
+  background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -274,15 +274,11 @@ nav > ul > li > a {
 }
 
 #logo-image {
-  /*max-width: 150px;*/
-}
-
-#social {
-
+  /* max-width: 150px; */
 }
 
 #skill-tools > div {
-  display:inline-block;
+  display: inline-block;
   width: 100%;
 }
 
@@ -295,26 +291,23 @@ nav > ul > li > a {
   margin-left: 125px;
 }
 
-
 /* Animations */
 
-.sun
-{
+.sun {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
-
-.cloud-front
-{
+.cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
   animation-iteration-count: infinite;
@@ -323,23 +316,20 @@ nav > ul > li > a {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
-.cloud-back
-{
+.cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
-#bigleaf
-{
+#bigleaf {
   animation-duration: 4s;
   animation-name: bigleaf-move;
   animation-iteration-count: infinite;
@@ -347,16 +337,13 @@ nav > ul > li > a {
   animation-timing-function: linear;
 }
 
-@keyframes bigleaf-move
-{
-    from {transform: translate(197px,66px);}
-    to {transform: translate(197px,105px);}
+@keyframes bigleaf-move {
+  from { transform: translate(197px, 66px); }
+  to { transform: translate(197px, 105px); }
 }
 
-
 #Oval,
-#Oval1
-{
+#Oval1 {
   animation-duration: 5s;
   animation-name: bigmoon-fade;
   animation-iteration-count: infinite;
@@ -364,13 +351,12 @@ nav > ul > li > a {
   animation-timing-function: linear;
 }
 
-@keyframes bigmoon-fade
-{
-  0% {fill: #FFFFFF;}
-  25% {fill: #CCE4E5;}
-  50% {fill: #ADC9CB;}
-  75% {fill: #CCE4E5;}
-  100% {fill: #FFFFFF;}
+@keyframes bigmoon-fade {
+  0% { fill: #fff; }
+  25% { fill: #cce4e5; }
+  50% { fill: #adc9cb; }
+  75% { fill: #cce4e5; }
+  100% { fill: #fff; }
 }
 
 /* Media Queries */
@@ -380,6 +366,7 @@ nav > ul > li > a {
   .work-img {
     width: 60%;
   }
+
   .work-text {
     width: 35%;
     padding: 20px;
@@ -391,6 +378,7 @@ nav > ul > li > a {
   nav {
     float: right; /* Makes nav stay on right of screen */
   }
+
   nav > ul > li {
     margin: 20px 3px 10px; /* Top margin of 33 px, left and Right of 3px, bottom of 10px */
     display: inline-block;
@@ -427,6 +415,7 @@ nav > ul > li > a {
   .work-img {
     width: 100%;
   }
+
   .work-text {
     width: 100%;
   }
@@ -447,5 +436,4 @@ nav > ul > li > a {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
