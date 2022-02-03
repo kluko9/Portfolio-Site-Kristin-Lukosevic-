@@ -259,15 +259,16 @@ nav > ul > li > a {
   width: 65%;
 }
 
-#DD-body {
+#Design-body {
   background-color: #e8eddd;
 }
 
-#DD-main {
+#Design-main {
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 
 #email {
   margin-top: -20px;
