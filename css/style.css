@@ -10,7 +10,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 light */
   line-height: 1.6; /* Sets the line height to 1.6 * the font size */
-  color: #3f6163;
+  color: #273E53;
 }
 
 h1,
@@ -45,7 +45,7 @@ img {
 }
 
 a {
-  color: #3f6163;
+  color: #273E53;
   text-decoration: none; /* No underlining */
 }
 
@@ -55,7 +55,7 @@ a:hover {
 }
 
 a:visited { /* visited link */
-  color: #3f6163;
+  color: #273E53;
 }
 
 a:active { /* selected link */
@@ -110,20 +110,20 @@ nav > ul > li > a {
 
 .button.contact {
   background-color: transparent;
-  color: #3f6163;
+  color: #385051;
   text-transform: uppercase;
-  border: 2px solid #3f6163;
+  border: 2px solid #385051;
   border-radius: 3px;
   padding: 5px;
 }
 
 .button.contact:hover {
-  background-color: #3f6163;
+  background-color: #4D6E65;
   color: #fff;
 }
 
 .button.learn-more {
-  background-color: #3f6163;
+  background-color: #385051;
   color: #fff;
   text-transform: uppercase;
   border: 1px solid #fff;
@@ -134,7 +134,7 @@ nav > ul > li > a {
 }
 
 .button.learn-more:hover {
-  background-color: #6b7d42;
+  background-color: #4D6E65;
   color: #fff;
   opacity: 0.8;
 }
@@ -243,11 +243,11 @@ nav > ul > li > a {
 }
 
 #index-body {
-  background-color: #C1B8B1;
+  background-color: #E9F4FC;
 }
 
 #about-body {
-  background-color: #C1B8B1;
+  background-color: #E9F4FC;
 }
 
 #about-photo {
@@ -260,7 +260,7 @@ nav > ul > li > a {
 }
 
 #Design-body {
-  background-color: #C1B8B1;
+  background-color: #E9F4FC;
 }
 
 #Design-main {
@@ -329,7 +329,7 @@ nav > ul > li > a {
   from { transform: translate(446px, 48px); }
   to { transform: translate(100px, 48px); }
 }
-
+/* comment out animation
 #bigleaf {
   animation-duration: 4s;
   animation-name: bigleaf-move;
@@ -359,6 +359,7 @@ nav > ul > li > a {
   75% { fill: #cce4e5; }
   100% { fill: #fff; }
 }
+*/
 
 /* Media Queries */
 
