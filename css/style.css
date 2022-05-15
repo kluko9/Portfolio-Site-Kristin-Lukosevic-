@@ -6,7 +6,7 @@ Button Color: #3e5f61
 */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'K2D', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 light */
   line-height: 1.6; /* Sets the line height to 1.6 * the font size */
@@ -21,12 +21,12 @@ h4 {
 }
 
 h1 {
-  font-family: 'Sofia', cursive;
+  font-family: 'K2D', cursive;
   font-size: 3.25em;
 }
 
 h2 {
-  font-size: 2em; /* was 2.00em before stylelint */
+  font-size: 2.5em; /* was 2.00em before stylelint */
   font-weight: 700;
 }
 
@@ -38,6 +38,11 @@ h3 {
 h4 {
   font-size: 1em;
   font-weight: 400;
+}
+
+h5 {
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 img {
@@ -155,6 +160,13 @@ nav > ul > li > a {
   margin-left: 30px;
 }
 
+.logo-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: auto;
+}
+
 .container-body {
   width: 80%;
   margin-left: auto;
@@ -242,6 +254,14 @@ nav > ul > li > a {
   background-color: #fff;
 }
 
+#logo_header {
+  display: block;
+}
+
+#logo_work { /* for the work section on the index.html page */
+  background-color: #fff;
+}
+
 #index-body {
   background-color: #E9F4FC;
 }
@@ -269,9 +289,12 @@ nav > ul > li > a {
   padding-bottom: 15px;
 }
 
-
 #email {
   margin-top: -20px;
+}
+
+#kluko-logo {
+  width: 300px;
 }
 
 #logo-image {
@@ -414,6 +437,11 @@ nav > ul > li > a {
     margin-right: auto;
   }
 
+  .logo-column {
+    display: block;
+    width: 100%;
+  }
+
   .work-img {
     width: 100%;
   }
@@ -425,6 +453,11 @@ nav > ul > li > a {
   #about-photo > div {
     width: 100%;
     padding-top: 30px;
+  }
+
+  #kluko-logo {
+    width: 80%;
+    margin-left: 10%;
   }
 
   #logo-image {
