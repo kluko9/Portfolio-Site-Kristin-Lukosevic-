@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Latest compiled and minified CSS Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <meta charset="utf-8">
+
+    <!--Font section-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sofia&display=swap" rel="stylesheet">
+    <!--hamburger icon section-->
+    <script src="https://kit.fontawesome.com/89081f1605.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kristin Lukosevic UX/UI Designer</title>
+  </head>
+
+<body id="index-body"><!-- Added the ID for Task 1.6 -->
+  <header>
+    <div class="container" id="topnav">
+      <div class="navtoggle" id='myNavtoggle'>
+        <a href="index.html"><!-- logo animation -->
+          <img src="img/portfolio/klukomountain.png" alt="kluko logo" id="kluko-logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">MY WORK</a></li>
+            <li> <a href="about.html">ABOUT ME</a></li>
+            <li><a href="files/Kristin-Lukosevic.Resume.pdf" target="_blank">RESUME</a></li>
+            <li><a href="#CONTACT" onclick="menuToggle()">CONTACT ME</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+    <main id="Design-main"><!-- Begin Main --><!-- Added ID for Task 1.6 -->
+      <div class="container-body"><!-- Added for Task 1.6, this should make everything fit nicer on the page -->
+        <h1> GPS Fishing Guide to PA</h1>
+        <div><!-- photo-->
+          <picture>
+            <source srcset="img/portfolio/GPSGuideintro11.png" media="(max-width:767px)">
+            <img src="img/portfolio/GPSGuideintro11.png" alt="desktop screen">
+          </picture>
+        </div><!-- End Picture -->
+
+        <div id="buzz-about"><!-- buzz about section -->
+          <h2> Project Brief </h2>
+          <p> The objective of this project was to recreate GPS Fishing Guide to PA to be more user-friendly and developed. My main goal was to correct user problems and enhance app designs to effectively bring in more downloads and more positive reviews.
+          </p>
+          <h3> My Role </h3>
+          <p> UX Designer<br>
+              UI Designer </p>
+          <h3> Tools Used</h3>
+          <ul>
+            <li> Figma </li>
+          </ul>
+
+          <h3> Project Duration</h3>
+          <p> 2 weeks, June 2022 </p>
+        </div><!-- End about section -->
+
+        <div id="BUZZ-ws"><!-- The ws of Buzz -->
+          <h2> The What and the Why</h2>
+          <h3> What </h3>
+          <p><b> What is GPS Fishing Guide to PA?</b><br><br>
+            GPS Fishing Guide to PA is an app for fisherman in Pennsylvania. This app is used to guide fishermen, showing them thousands of locations all around the state. There are a variety of fish such as trout, bass, walleye, muskie, carp, and pike. <br>
+
+            GPS Fishing Guide gives directions to access points whether you are on foot or using a boat, canoe or kayak. Once you are in the water you can also drop waypoints to keep track of your fishing journey.</p>
+
+          <h3> Why </h3>
+          <p> <b> Why are we Redesigning GPS Fishing Guide to PA?</b><br><br>
+            There are many apps out there that can use improvement. I researched the app store for poor reviews and discovered GPS Fishing Guide to PA.</p>
+            <ul>
+              <li> Colors do not pass contrast check test </li>
+              <li> Users paid money for an app that is underdeveloped </li>
+              <li> Fishing map is not clear for users to read </li>
+            </ul>
+
+        <h2> Common Pain points</h2>
+        <p> After reading the reviews, I downloaded the app and immediately noticed some issues. I then interviewed 5 users to test the app and
+            its features. Many users had similar concerns here are the results.
+            <br>
+            <ul>
+              <li> Once opening the app it is hard to tell where to start </li>
+              <li> The app did not take me to my current location, it is not hooked up to GPS </li>
+              <li> For the cost of the app it is very underdeveloped and could use improvement on colors and design </li>
+              <li> The bottom icons are confusing and I'm not sure what all of them mean </li>
+        </div><!-- End ws section -->
+
+        <div id="flows"><!-- User flow section-->
+          <h2> User Friendly for all</h2>
+          <p> The previous design for GPS Fishing Guide to PA was not friendly to all users, specifically color blind users. I already determined that the apps colors did not pass the contrast ratio, however I decided to dig deeper by creating a color blind number chart with the two main app colors.
+          </p>
+          <p> I tested this chart on 3 color blind users, and they all had the same response of “I cannot see a difference in color and I cannot determine the number”
+            These users also stated that they had a tough time reading the apps home page. They could not see the icons or words clearly on the bottom navigation. </p>
+
+
+            <picture><!-- User Flow photo -->
+              <source srcset="img/portfolio/Colorcontrast.png" media="(max-width:767px)">
+              <img src="img/portfolio/Colorcontrast.png" alt="desktop screen">
+            </picture>
+        </div><!-- End of User flow <section-->
+
+        <div id="wireframing"><!-- Wireframing section-->
+          <h2> Goals for the Redesign</h2>
+          <p><b> Correct user concerns such as: </b></p>
+            <ul>
+              <li> Make map easier to read and navigate </li>
+              <li> Create a pull down menu to describe what is on the map </li>
+              <li> Develop the app more by incorporating a fish identifier</li>
+            </ul>
+            <p><b> Other fixes: </b></p>
+              <ul>
+                <li> Make screen for map, journal, social, and fish identifier </li>
+                <li> Change color scheme to pass contrast test and color blind test </li>
+                <li> Breakdown UX process</li>
+              </ul>
+
+        <div id="final-product"><!-- Final Product Section-->
+          <h2> Final Product</h2>
+          <p><b> Here are the final 12 Redesigned screens</b></p>
+            <picture><!--Mockup photo 1 -->
+              <source srcset="img/portfolio/GPSfinal1.png" media="(max-width:767px)">
+              <img src="img/portfolio/GPSfinal1.png" alt="desktop screen">
+            </picture>
+            <picture><!-- Mockup photo 2 -->
+              <source srcset="img/portfolio/GPSFinal2.png" media="(max-width:767px)">
+              <img src="img/portfolio/GPSFinal2.png" alt="desktop screen">
+            </picture>
+
+            <div id="findings"><!-- what ive learned-->
+              <h2> Project Reflection</h2>
+              <h3> What did I learn? What could I have done differently? </h3>
+              <p>Overall the 12 screens that I redesigned gave me great insight on how important the UX process is. GPS Fishing Guide was a great example of the struggles users face every day with under developed apps. This process has taught me to focus on keeping things simple as we do not want to overwhelm the user. More importantly I have learned to keep every user in mind. This app is now suitable for users with color blindness, whereas before that was not feasible.
+                <br>
+                If given the opportunity I would have created more screens such as, profile screen for social page. I would have also developed a screen for the “view restrictions” This way users can see where they would be brought to next.
+                <br>
+                Thank you for checking out my redesign!
+                <br><br>
+                <h4> To see the full Case Study for GPS Fishing Guide to PA, please check out my Behance by clicking the icon below! </h4>
+               </p>
+            </div>
+        </div><!-- End of Final Product Section-->
+      </div>
+    </main><!-- End Main -->
+
+    <footer id="CONTACT">
+      <div class="container-fluid"><!-- Contact Container --><!-- Added class for Task 1.6 -->
+        <h3 class="center-text"> Let's Get in Touch! </h3><!-- Added the class for Task 1.6 -->
+        <!-- This section was changed in the prompts TASK 1.6
+        <p> Give me a call!
+          <a href="+15121234567">(512) 123-4567</a>
+            or send me an <a href="mailto:klukosevic@gmail.com">Email</a>
+        </p>
+        -->
+        <div class="center-objects"><!-- Created for Task 1.6 -->
+          <a href="mailto:klukosevic@gmail.com" class="button contact">Email Me</a><!-- updated for TASK 1.6 changed "email" to "email me"-->
+        </div>
+        <div class="center-objects" id="social"><!-- Social Icons -->
+          <ul class="list-inline"><!-- Added for Task 1.6, this allows me to update the list style -->
+            <li class="social-icons"><!--Linkedin icon--><!--Added class for Task 1.6-->
+              <a href="https://www.linkedin.com/in/kristin-luko/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="48" height="48"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path></svg>
+              </a>
+            </li><!-- End Linkedin Icon -->
+            <li class="social-icons"><!-- Behance Icon --><!--Added class for Task 1.6-->
+              <a href="https://www.behance.net/kristinlukosev" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="48" height="48"
+                  viewBox="0 0 48 48"
+                  style=" fill:#000000;"><path fill="#2196F3" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z"></path><path fill="#FFF" d="M27 17H34V19H27zM21.512 23.428c.585-.285 1.903-.934 1.903-2.857 0-3.617-3.952-3.57-4.683-3.57H12v14h7.025C19.61 31 24 30.835 24 26.999 24 24.524 22.39 23.714 21.512 23.428zM15 19.428h2.928c.292 0 2.195.104 2.195 1.572 0 1.467-1.463 1.714-1.902 1.714H15V19.428zM18.336 28.571h-3.367v-3.856h3.367c.731 0 2.341.237 2.341 2C20.677 28.476 18.628 28.571 18.336 28.571zM32.438 28.395c-.465.289-.929.436-1.549.436-2.326 0-2.789-1.961-2.789-2.83H36c0-.869 0-1.511-.155-2.236C35.689 23.04 34.63 20 30.734 20 25.289 20 25 24.778 25 25.5c0 .723.156 1.593.467 2.171.309.724.619 1.304 1.084 1.736.464.435 1.083.866 1.703 1.157C29.028 30.855 29.803 31 30.578 31c1.238 0 2.324-.288 3.253-.868.931-.579 1.55-1.448 2.014-2.606h-2.633C33.057 27.816 32.902 28.104 32.438 28.395zM30.734 22.027c1.518 0 2.168 1.592 2.322 2.314H28.1C28.1 24.198 28.471 22.027 30.734 22.027z"></path>
+                </svg>
+              </a>
+            </li><!-- End Behance Icon-->
+          </ul>
+        </div><!-- End Social Icons -->
+        <p class="center-text"> Copyright Kristin Lukosevic</p><!-- Added class for Task 1.6 -->
+      </div><!-- End Contact Container -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"
+    integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
